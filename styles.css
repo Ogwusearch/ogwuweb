@@ -1,97 +1,173 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
     line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-}
-
-header .highlight {
-    color: #ffa500;
-}
-
-header .btn {
-    display: inline-block;
-    padding: 10px 20px;
     color: #333;
-    background: #ffa500;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-header .btn:hover {
-    background: #e69500;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1100px;
 }
 
-section {
-    padding: 30px 0;
+h1, h2, h3 {
+    color: #222;
+    margin-bottom: 15px;
 }
 
-h2 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #f4f4f4;
-    margin: 10px 0;
-    padding: 15px;
-    border-left: 5px solid #ffa500;
-}
-
-.projects {
+.navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .btn {
+    background: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #e69500;
+}
+
+/* About */
+#about {
+    padding: 50px 0;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    float: left;
+}
+
+.about-content {
+    overflow: auto;
+}
+
+/* Skills */
+#skills {
+    background: #f4f4f4;
+    padding: 50px 0;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    flex: 1 1 calc(25% - 20px);
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.skill i {
+    font-size: 30px;
+    color: #ffa500;
+    margin-bottom: 10px;
+}
+
+/* Projects */
+#projects {
+    padding: 50px 0;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .project {
-    flex: 1 1 calc(33.333% - 10px);
-    background: #f4f4f4;
-    margin: 10px;
-    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project .btn {
+    display: block;
+    padding: 10px 0;
+    background: #ffa500;
     text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.project .btn:hover {
+    background: #e69500;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer input, footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.project h3 {
-    margin-top: 0;
-}
-
-.project a {
-    text-decoration: none;
-    color: #ffa500;
-    font-weight: bold;
-}
-
-.project a:hover {
-    color: #e69500;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+footer button {
+    background: #ffa500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

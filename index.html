@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ogwusach's Portfolio - Showcasing skills in building, woodworking, electronics, and web development.">
+    <meta name="author" content="Ogwusach">
     <title>Ogwusach | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>👋 Hi, I'm <span class="highlight">Ogwusach</span></h1>
-            <p>A hands-on creator mastering the art of building, designing, and innovating.</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+    <header id="home">
+        <nav class="navbar">
+            <div class="container">
+                <h1><a href="#home">Ogwusach</a></h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h2>👋 Hi, I'm <span class="highlight">Ogwusach</span></h2>
+                <p>Turning ideas into reality with expertise in building, woodworking, electronics, and web development.</p>
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
         </div>
     </header>
 
@@ -19,51 +35,82 @@
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <p>I'm passionate about mastering new skills and bringing ideas to life through my expertise in building, woodworking, electronics, and web development.</p>
+                <div class="about-content">
+                    <img src="profile.jpg" alt="Ogwusach" class="profile-img">
+                    <p>I am a passionate professional dedicated to mastering new skills and creating impactful projects. Whether it's crafting furniture, repairing electronics, or building websites, I thrive on challenges and delivering excellence.</p>
+                </div>
             </div>
         </section>
 
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <ul>
-                    <li>🏗️ Building & Construction</li>
-                    <li>🪑 Woodworking & Furniture Making</li>
-                    <li>⚡ Electronics Repair (DC & AC Systems)</li>
-                    <li>💻 Web Development (HTML, CSS, JavaScript)</li>
-                </ul>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fas fa-hammer"></i>
+                        <h3>Building</h3>
+                        <p>Expert in construction and woodworking, crafting durable and precise structures.</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Designing and building functional websites using HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Electronics</h3>
+                        <p>Repairing and optimizing DC and AC systems with precision and efficiency.</p>
+                    </div>
+                    <div class="skill">
+                        <i class="fas fa-brain"></i>
+                        <h3>Quick Learner</h3>
+                        <p>Always eager to learn new technologies and improve existing skills.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="projects">
             <div class="container">
-                <h2>My Projects</h2>
-                <div class="projects">
+                <h2>Projects</h2>
+                <div class="projects-grid">
                     <div class="project">
+                        <img src="project1.jpg" alt="Personal Website">
                         <h3>Personal Website</h3>
                         <p>A showcase of my skills and achievements.</p>
-                        <a href="https://ogwusach.github.io/my-website/" target="_blank">View Project</a>
+                        <a href="https://ogwusach.github.io/my-website/" target="_blank" class="btn">View Project</a>
                     </div>
                     <div class="project">
+                        <img src="project2.jpg" alt="Furniture Portfolio">
                         <h3>Furniture Portfolio</h3>
                         <p>Custom designs crafted with precision and care.</p>
-                        <a href="https://github.com/Ogwusach/furniture-portfolio" target="_blank">View Portfolio</a>
+                        <a href="https://github.com/Ogwusach/furniture-portfolio" target="_blank" class="btn">View Portfolio</a>
                     </div>
                     <div class="project">
+                        <img src="project3.jpg" alt="Electronics Repair Logs">
                         <h3>Electronics Repair Logs</h3>
                         <p>Guides and logs of my DIY electronics fixes.</p>
-                        <a href="https://github.com/Ogwusach/electronics-repair" target="_blank">Explore Logs</a>
+                        <a href="https://github.com/Ogwusach/electronics-repair" target="_blank" class="btn">Explore Logs</a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container" id="contact">
-            <p>Made with ❤️ by Ogwusach</p>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Interested in working together? Let's connect!</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
+        <p class="footer-note">Made with ❤️ by Ogwusach</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+

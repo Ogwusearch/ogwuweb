@@ -8,18 +8,23 @@
     <title>Ogwusach | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
 </head>
 <body>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> <span>About</span></a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i> <span>Skills</span></a></li>
+            <li><a href="#projects"><i class="fas fa-briefcase"></i> <span>Projects</span></a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+    </div>
+    
     <header id="home">
         <nav class="navbar">
             <div class="container">
                 <h1><a href="#home">Ogwusach</a></h1>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
             </div>
         </nav>
         <div class="hero">
@@ -30,87 +35,27 @@
             </div>
         </div>
     </header>
-
+    
     <main>
         <section id="about">
             <div class="container">
                 <h2>About Me</h2>
-                <div class="about-content">
-                    <img src="profile.jpg" alt="Ogwusach" class="profile-img">
-                    <p>I am a passionate professional dedicated to mastering new skills and creating impactful projects. Whether it's crafting furniture, repairing electronics, or building websites, I thrive on challenges and delivering excellence.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill">
-                        <i class="fas fa-hammer"></i>
-                        <h3>Building</h3>
-                        <p>Expert in construction and woodworking, crafting durable and precise structures.</p>
-                    </div>
-                    <div class="skill">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Web Development</h3>
-                        <p>Designing and building functional websites using HTML, CSS, and JavaScript.</p>
-                    </div>
-                    <div class="skill">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Electronics</h3>
-                        <p>Repairing and optimizing DC and AC systems with precision and efficiency.</p>
-                    </div>
-                    <div class="skill">
-                        <i class="fas fa-brain"></i>
-                        <h3>Quick Learner</h3>
-                        <p>Always eager to learn new technologies and improve existing skills.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project">
-                        <img src="project1.jpg" alt="Personal Website">
-                        <h3>Personal Website</h3>
-                        <p>A showcase of my skills and achievements.</p>
-                        <a href="https://ogwusach.github.io/my-website/" target="_blank" class="btn">View Project</a>
-                    </div>
-                    <div class="project">
-                        <img src="project2.jpg" alt="Furniture Portfolio">
-                        <h3>Furniture Portfolio</h3>
-                        <p>Custom designs crafted with precision and care.</p>
-                        <a href="https://github.com/Ogwusach/furniture-portfolio" target="_blank" class="btn">View Portfolio</a>
-                    </div>
-                    <div class="project">
-                        <img src="project3.jpg" alt="Electronics Repair Logs">
-                        <h3>Electronics Repair Logs</h3>
-                        <p>Guides and logs of my DIY electronics fixes.</p>
-                        <a href="https://github.com/Ogwusach/electronics-repair" target="_blank" class="btn">Explore Logs</a>
-                    </div>
-                </div>
+                <p>I am a passionate professional dedicated to mastering new skills.</p>
             </div>
         </section>
     </main>
-
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Interested in working together? Let's connect!</p>
-            <form id="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-        <p class="footer-note">Made with ❤️ by Ogwusach</p>
-    </footer>
-    <script src="script.js"></script>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
 
